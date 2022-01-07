@@ -9,7 +9,7 @@
 
     <title>Live Clock</title>
   </head>
-  <body>
+  <body onload="audio.play()">
     <nav id="navi">
         <lable class="menu">
             <i class="material-icons" onclick="showMenu()">menu</i>
@@ -23,11 +23,12 @@
       </ul>
     </nav>
     <div id="mytime"></div>
-    <div class="music">
-      <audio controls>
-        <source src="Bad-Boy_(webmusic.in).mp3" type="audio/mp3" style="color: red;">
+    <!-- <div>
+      <button>Pause Sound</button>
+      <audio controls autoplay loop>
+        <source src="clock-ticking.mp3" type="audio/mp3">
       </audio>
-    </div>
+    </div> -->
     <script src="index.js"></script>
   </body>
 </html>
