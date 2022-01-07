@@ -19,19 +19,9 @@ setInterval(() => {
     document.getElementById("mytime").innerHTML=display; 
 }, 1000);
 
-
-// or
-
-// newdiv = document.createElement("div"); 
-// bdy=document.getElementById("mytime");
-// bdy.appendChild(newdiv);
-// newdiv.onload=displayClock()
-
-// function displayClock(){
-//     var display = new Date().toLocaleTimeString();
-//     newdiv.innerHTML = display;
-//     setTimeout(displayClock, 1000); 
+// var audio = document.getElementById("sounds");
+// function sound() {
+//     audio.play();
 // }
-// 
-// displayClock();
-
+var audio = new Audio();
+audio.src = "clock-ticking.mp3";
